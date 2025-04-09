@@ -148,27 +148,27 @@ export default function OldWaySection() {
                   >
                     {/* Ideal Funnel */}
                     <motion.div 
-                      className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-primary-100 to-primary-200 rounded-t-lg flex items-center justify-center"
+                      className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-blue-100 to-blue-200 rounded-t-lg flex items-center justify-center"
                       initial={{ height: 0 }}
                       whileInView={{ height: "10rem" }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8, delay: 1.2 }}
                     >
-                      <span className="text-lg font-medium text-primary-700">100% Leads Generated</span>
+                      <span className="text-lg font-medium text-blue-700">100% Leads Generated</span>
                     </motion.div>
                     
                     <motion.div 
-                      className="absolute inset-x-6 top-36 h-20 bg-gradient-to-b from-primary-200 to-primary-300 flex items-center justify-center"
+                      className="absolute inset-x-6 top-36 h-20 bg-gradient-to-b from-blue-200 to-blue-300 flex items-center justify-center"
                       initial={{ height: 0 }}
                       whileInView={{ height: "5rem" }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8, delay: 1.4 }}
                     >
-                      <span className="text-base font-medium text-primary-700">85% Contacted 5+ Times</span>
+                      <span className="text-base font-medium text-blue-700">85% Contacted 5+ Times</span>
                     </motion.div>
                     
                     <motion.div 
-                      className="absolute inset-x-12 top-52 h-14 bg-gradient-to-b from-primary-300 to-primary-400 flex items-center justify-center"
+                      className="absolute inset-x-12 top-52 h-14 bg-gradient-to-b from-blue-300 to-blue-400 flex items-center justify-center"
                       initial={{ height: 0 }}
                       whileInView={{ height: "3.5rem" }}
                       viewport={{ once: true }}
@@ -178,7 +178,7 @@ export default function OldWaySection() {
                     </motion.div>
                     
                     <motion.div 
-                      className="absolute inset-x-18 top-64 h-10 bg-gradient-to-b from-primary-500 to-primary-600 rounded-b-lg flex items-center justify-center"
+                      className="absolute inset-x-18 top-64 h-10 bg-gradient-to-b from-blue-500 to-blue-600 rounded-b-lg flex items-center justify-center"
                       initial={{ height: 0 }}
                       whileInView={{ height: "2.5rem" }}
                       viewport={{ once: true }}

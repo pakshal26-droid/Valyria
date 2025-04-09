@@ -48,17 +48,17 @@ export default function NewWaySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="aspect-video bg-slate-800 flex items-center justify-center">
+              <div className="aspect-video bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center">
                 <div className="text-center px-4">
                   <motion.div 
-                    className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-primary text-white"
+                    className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-blue-500 text-white shadow-lg"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Play className="h-8 w-8" />
                   </motion.div>
                   <p className="mt-4 text-lg font-medium text-white">Video Demo: AI Voice Agent in Action</p>
-                  <p className="mt-2 text-sm text-slate-300">Watch how our AI qualifies leads and routes hot prospects to your team</p>
+                  <p className="mt-2 text-sm text-blue-200">Watch how our AI qualifies leads and routes hot prospects to your team</p>
                 </div>
               </div>
             </motion.div>
@@ -74,7 +74,7 @@ export default function NewWaySection() {
                   transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
                 >
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-primary-100 text-primary">
+                    <div className="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
                       <Check className="h-6 w-6" />
                     </div>
                     <div className="ml-4">

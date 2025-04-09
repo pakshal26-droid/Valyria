@@ -56,11 +56,11 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="relative aspect-video bg-slate-100">
+            <div className="relative aspect-video bg-gradient-to-r from-blue-50 to-indigo-50">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center px-4">
                   <motion.div 
-                    className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-primary text-white"
+                    className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 text-white shadow-lg"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
