@@ -1,0 +1,79 @@
+I want you to build a landing page for my voice AI agency using a copy I will provide
+
+Copy-
+Here's a high-converting, SEO-optimized landing page structured for your AI voice agent solution (focused on pre-sales lead qualification for high-ticket industries like finance, real estate, and SaaS):
+---
+### Hero Section + Who It's For  
+Headline:  
+"Stop Losing 97% of Your Inbound Leads to Bad Follow-Ups"  
+Subheadline:  
+For B2C businesses drowning in 2,000+ monthly inquiries but converting <3%—our AI voice agent qualifies leads 24/7, books 3X more meetings, and costs 70% less than human teams.  
+Primary CTA:  
+"Get Free Lead Audit → See How Many Sales You’re Losing" [Button]  
+---
+### The Old Way (Pain Points)  
+Subheader:  
+"Why Human-Centric Lead Follow-Up Fails for High-Volume Businesses"  
+Body:  
+- ❌ Agents call leads once, then give up – 80% of conversions happen after 5+ follow-ups (your team does 1.2 on average).  
+- ❌ Inconsistent timing – Calling at 3 PM when the lead is free at 8 PM.  
+- ❌ Poor lead prioritization – Agents can’t detect urgency in a prospect’s voice or questions.  
+- ❌ Rookie mistakes – Low-paid agents sound robotic, killing trust in your ₹10Cr+ brand.  
+Visual:  
+[Side-by-side graph: "Your Current Lead Funnel" (wide top, narrow bottom) vs. "Ideal Funnel" (controlled flow)]  
+---
+### The New Way (AI-Driven Lead Conversion)  
+Subheader:  
+"How Top 1% Brands Qualify Leads While You Sleep"  
+Body:  
+- ✅ AI learns your lead’s habits: Calls at 8 PM if they opened emails at 8 PM last week.  
+- ✅ Unlimited follow-ups: 100% of leads get 8+ contact attempts across call/WhatsApp/SMS.  
+- ✅ Voice analytics: Detects urgency (“Need this by Diwali!”) and routes hot leads to your closers.  
+- ✅ Your brand voice, automated: Trained on your best sales calls to mimic top performers.  
+Visual:  
+[Video demo: AI agent qualifying a lead in Hindi/English, syncing data to CRM, tagging urgency level.]  
+---
+### Our Solution  
+Subheader:  
+"Not ‘Another Chatbot’—Your 24/7 Pre-Sales Team That Works for ₹9/Lead"  
+Key Features:  
+- Smart Follow-Up Engine  
+  Calls leads at optimal times (even weekends) based on their digital behavior.  
+- Tender/Deal-Ready Training  
+  Pre-loaded with compliance scripts for finance, real estate, and govt. tenders.  
+- Seamless Handoff  
+  Only sends you leads who:  
+  - Asked for pricing  
+  - Booked a demo  
+  - Said “Yes” to 3+ qualifying questions  
+- Plug-and-Play CRM Sync  
+  Works with Salesforce, HubSpot, or your custom tool.  
+Social Proof:  
+“Used by companies processing 15,000+ leads/month in:  
+🏦 Banking | 🏢 Real Estate | 🛒 E-commerce”  
+---
+### CTA Section  
+Headline:  
+"Your Competitors’ Secret? They Lose Less Leads."  
+Body:  
+Get a FREE Lead Audit:  
+1. We analyze 500+ past leads to show exact drop-off points.  
+2. You get a 15-min demo of our AI re-engaging your lost opportunities.  
+3. Pay only if we book 25% more meetings than your current team.  
+Final CTA:  
+"Claim Free Audit → Fix Your Funnel in 1 Hour" [Button]  
+---
+### SEO Optimization  
+Target Keywords:  
+- “AI lead qualification for B2C”  
+- “High-ticket lead conversion software”  
+- “Automate sales calls India”  
+- “Reduce lead follow-up cost”  
+Technical SEO:  
+- Slug: /ai-voice-agent-for-high-ticket-sales  
+- Meta Description: “Convert 5X more ₹10Cr+ leads with AI voice agents that call prospects 24/7 at perfect times. Book free audit.”  
+- Alt Tags: “AI voice agent for real estate lead follow-up”, “Automated lead qualification software”  
+---
+This page speaks directly to VPs of Sales/Business Heads in financial services, real estate, and enterprise SaaS—the ones feeling daily pressure to convert more inbound leads without blowing budgets. 
+
+I want you to give me a landing page react components using shadcn as well as framer motion and tailwind css for styling
