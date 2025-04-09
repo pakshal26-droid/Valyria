@@ -178,7 +178,7 @@ export default function OldWaySection() {
                     </motion.div>
                     
                     <motion.div 
-                      className="absolute inset-x-18 top-64 h-10 bg-gradient-to-b from-blue-500 to-blue-600 rounded-b-lg flex items-center justify-center"
+                      className="absolute inset-x-16 top-64 h-10 bg-gradient-to-b from-blue-500 to-blue-600 rounded-b-lg flex items-center justify-center"
                       initial={{ height: 0 }}
                       whileInView={{ height: "2.5rem" }}
                       viewport={{ once: true }}

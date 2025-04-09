@@ -59,7 +59,7 @@ export default function CTASection() {
   };
 
   return (
-    <section id="audit" className="py-16 bg-gradient-to-r from-slate-900 to-primary-900">
+    <section id="audit" className="py-16 bg-gradient-to-r from-blue-900 to-indigo-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="max-w-4xl mx-auto"
@@ -78,7 +78,7 @@ export default function CTASection() {
           </div>
           
           <motion.div 
-            className="mt-12 bg-white rounded-xl overflow-hidden shadow-xl"
+            className="mt-12 bg-blue-50 rounded-xl overflow-hidden shadow-xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -89,21 +89,21 @@ export default function CTASection() {
               
               <div className="mt-6 space-y-6 text-slate-700">
                 <div className="flex">
-                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary text-sm font-medium">
+                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-600 text-sm font-medium">
                     1
                   </div>
                   <p className="ml-4 text-base">We analyze 500+ past leads to show exact drop-off points.</p>
                 </div>
                 
                 <div className="flex">
-                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary text-sm font-medium">
+                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-600 text-sm font-medium">
                     2
                   </div>
                   <p className="ml-4 text-base">You get a 15-min demo of our AI re-engaging your lost opportunities.</p>
                 </div>
                 
                 <div className="flex">
-                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary text-sm font-medium">
+                  <div className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-600 text-sm font-medium">
                     3
                   </div>
                   <p className="ml-4 text-base">Pay only if we book 25% more meetings than your current team.</p>
