@@ -226,7 +226,8 @@ export default function CTASection() {
                     <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
                       <Button 
                         type="submit" 
-                        className="w-full py-6 h-auto text-base"
+                        
+                        className="w-full py-6 h-auto md:text-base text-sm"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? "Processing..." : "Claim Free Audit → Fix Your Funnel in 1 Hour"}

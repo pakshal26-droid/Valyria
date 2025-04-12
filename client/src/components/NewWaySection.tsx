@@ -42,7 +42,7 @@ export default function NewWaySection() {
         <div className="mt-16">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-16">
             <motion.div 
-              className="relative overflow-hidden rounded-xl shadow-lg"
+              className="relative overflow-hidden rounded-xl h-fit"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

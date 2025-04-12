@@ -21,7 +21,7 @@ export default function Home() {
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
             window.scrollTo({
-              top: targetElement.offsetTop - 80,
+              top: (targetElement as HTMLElement).offsetTop - 80,
               behavior: 'smooth'
             });
           }
@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-sans text-slate-800 bg-slate-50 overflow-x-hidden">
+    <div className="font-jk text-slate-800 bg-slate-50 overflow-x-hidden">
       <Navbar />
       <main className="pt-16">
         <HeroSection />

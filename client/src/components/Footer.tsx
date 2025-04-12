@@ -14,9 +14,9 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-8 h-8 rounded-md bg-gradient-to-r from-primary to-emerald-500 flex items-center justify-center">
-                <Mic className="h-5 w-5 text-white" />
+                
               </div>
-              <span className="text-xl font-bold">VoiceAI</span>
+              <span className="text-xl font-bold">Valyria</span>
             </motion.div>
             <p className="mt-4 text-slate-400 text-sm">
               AI-powered voice agents that qualify leads 24/7, book more meetings, and cost 70% less than human teams.
@@ -76,7 +76,7 @@ export default function Footer() {
         
         <div className="mt-12 border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-base text-slate-400">
-            &copy; {currentYear} VoiceAI Technologies. All rights reserved.
+            &copy; {currentYear} Valyria Technologies. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <motion.a 

@@ -24,7 +24,7 @@ export default function OldWaySection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold  tracking-tight text-slate-900 sm:text-4xl">
             Why Human-Centric Lead Follow-Up Fails for High-Volume Businesses
           </h2>
           <p className="mt-4 text-lg text-slate-600">
@@ -54,20 +54,21 @@ export default function OldWaySection() {
                 }
               ].map((item, index) => (
                 <motion.div 
-                  className="flex"
+                  className="flex flex-row items-start md:px-0 px-5"
                   key={index}
                   custom={index}
                   variants={fadeIn}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
+                  
                 >
                   <div className="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-500">
-                    <X className="h-6 w-6" />
+                    <X className="h-5 w-5" />
                   </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-900">{item.title}</h3>
-                    <p className="mt-2 text-base text-slate-600">{item.description}</p>
+                  <div className="ml-4 flex flex-col ">
+                    <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
+                    <p className=" md:text-lg text-base text-slate-600">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -152,7 +153,7 @@ export default function OldWaySection() {
                       initial={{ height: 0 }}
                       whileInView={{ height: "10rem" }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 1.2 }}
+                      transition={{ duration: 0.8, delay: 0.7 }}
                     >
                       <span className="text-lg font-medium text-blue-700">100% Leads Generated</span>
                     </motion.div>
@@ -162,7 +163,7 @@ export default function OldWaySection() {
                       initial={{ height: 0 }}
                       whileInView={{ height: "5rem" }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 1.4 }}
+                      transition={{ duration: 0.8, delay: 1.2 }}
                     >
                       <span className="text-base font-medium text-blue-700">85% Contacted 5+ Times</span>
                     </motion.div>
@@ -172,7 +173,7 @@ export default function OldWaySection() {
                       initial={{ height: 0 }}
                       whileInView={{ height: "3.5rem" }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 1.6 }}
+                      transition={{ duration: 0.8, delay: 1.2 }}
                     >
                       <span className="text-sm font-medium text-white">40% Qualified & Interested</span>
                     </motion.div>
@@ -182,7 +183,7 @@ export default function OldWaySection() {
                       initial={{ height: 0 }}
                       whileInView={{ height: "2.5rem" }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 1.8 }}
+                      transition={{ duration: 0.8, delay: 1.2 }}
                     >
                       <span className="text-xs font-medium text-white">15% Converted</span>
                     </motion.div>

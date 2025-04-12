@@ -42,9 +42,9 @@ export default function SolutionSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Badge className="bg-primary-100 text-primary hover:bg-primary-200">Our Solution</Badge>
+          <Badge className="bg-primary-100 text-primary text-lg hover:bg-primary-200">Our Solution</Badge>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Not 'Another Chatbot'—Your 24/7 Pre-Sales Team That Works for ₹9/Lead
+            Not 'Another Chatbot'—Your 24/7 Pre-Sales Team That Works for ₹20/Lead
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             Purpose-built to handle complex sales scenarios and deliver qualified prospects ready to close
@@ -63,10 +63,10 @@ export default function SolutionSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center mb-3">
                     {feature.icon}
                   </div>
-                  <h3 className="text-lg font-medium text-slate-900">{feature.title}</h3>
+                  <h3 className="text-lg font-semibold text-slate-900">{feature.title}</h3>
                   <p className="mt-2 text-sm text-slate-600">
                     {feature.description}
                   </p>
@@ -94,7 +94,7 @@ export default function SolutionSection() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <span className="text-2xl">🏦</span>
-                  <span className="text-lg font-medium text-slate-700">Banking</span>
+                  <span className="text-lg font-medium text-slate-700">Agency Owners</span>
                 </motion.div>
                 <motion.div 
                   className="flex items-center space-x-2"

@@ -21,9 +21,9 @@ export default function Navbar() {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Mic className="h-5 w-5 text-white" />
+                
               </motion.div>
-              <span className="text-xl font-bold text-slate-800">VoiceAI</span>
+              <span className="text-xl font-bold text-slate-800">Valyria</span>
             </a>
           </div>
           
@@ -35,7 +35,7 @@ export default function Navbar() {
           </nav>
           
           <div className="flex items-center">
-            <Button asChild className="hidden md:inline-flex">
+            <Button asChild className="hidden text-white md:inline-flex">
               <a href="#audit">Get Free Audit</a>
             </Button>
             <button
