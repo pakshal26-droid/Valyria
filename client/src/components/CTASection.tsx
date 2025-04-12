@@ -9,6 +9,9 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser'
+import { error } from "console";
 
 // Form schema with validation
 const formSchema = z.object({
@@ -25,6 +28,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function CTASection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   // Form definition
   const form = useForm<FormValues>({
@@ -44,18 +48,64 @@ export default function CTASection() {
   const onSubmit = (data: FormValues) => {
     setIsSubmitting(true);
     
-    // Simulating API call
-    setTimeout(() => {
-      console.log("Form submitted:", data);
-      setIsSubmitting(false);
+    if (formRef.current) {
+      // Create hidden inputs for the template variables
+      const form = formRef.current;
       
-      toast({
-        title: "Audit Request Submitted",
-        description: "We'll be in touch with you shortly to schedule your free lead audit.",
+      // Format data for the email template
+      const formattedName = `${data.firstName} ${data.lastName}`;
+      const currentTime = new Date().toLocaleString();
+      const messageContent = `
+        Company: ${data.company}
+        Email: ${data.email}
+        Phone: ${data.phone}
+        Monthly Leads: ${data.leads}
+      `;
+      
+      // Clear any existing hidden fields
+      form.querySelectorAll('input[type="hidden"]').forEach(el => el.remove());
+      
+      // Create hidden fields with template variable names
+      const createHiddenField = (name: string, value: string) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        form.appendChild(input);
+      };
+      
+      // Add fields that match the template variables
+      createHiddenField('name', formattedName);
+      createHiddenField('time', currentTime);
+      createHiddenField('message', messageContent);
+      
+      emailjs.sendForm(
+        "service_fffqa7v",
+        "template_lsvn23n",
+        form,
+        "1WpGwKo3dYlV2HOiX"
+      ).then((result) => {
+        console.log(result.text);
+        
+        // Notify success and reset form
+        toast({
+          title: "Audit Request Submitted",
+          description: "We'll be in touch with you shortly to schedule your free lead audit.",
+        });
+        
+        form.reset();
+        setIsSubmitting(false);
+      }, (error) => {
+        console.log(error);
+        setIsSubmitting(false);
+        
+        toast({
+          title: "Error",
+          description: "There was a problem submitting your request. Please try again.",
+          variant: "destructive"
+        });
       });
-      
-      form.reset();
-    }, 1000);
+    }
   };
 
   return (
@@ -112,7 +162,7 @@ export default function CTASection() {
               
               <div className="mt-8">
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                       <FormField
                         control={form.control}
@@ -121,7 +171,7 @@ export default function CTASection() {
                           <FormItem>
                             <FormLabel>First name</FormLabel>
                             <FormControl>
-                              <Input placeholder="John" {...field} />
+                              <Input id="firstName" placeholder="John" {...field} />
                             </FormControl>
                           </FormItem>
                         )}
@@ -134,7 +184,7 @@ export default function CTASection() {
                           <FormItem>
                             <FormLabel>Last name</FormLabel>
                             <FormControl>
-                              <Input placeholder="Doe" {...field} />
+                              <Input id="lastName" placeholder="Doe" {...field} />
                             </FormControl>
                           </FormItem>
                         )}
@@ -147,7 +197,7 @@ export default function CTASection() {
                           <FormItem>
                             <FormLabel>Work email</FormLabel>
                             <FormControl>
-                              <Input placeholder="you@company.com" {...field} />
+                              <Input id="email" placeholder="you@company.com" {...field} />
                             </FormControl>
                           </FormItem>
                         )}
@@ -160,7 +210,7 @@ export default function CTASection() {
                           <FormItem>
                             <FormLabel>Phone number</FormLabel>
                             <FormControl>
-                              <Input placeholder="+91 98765 43210" {...field} />
+                              <Input id="phone" placeholder="+91 98765 43210" {...field} />
                             </FormControl>
                           </FormItem>
                         )}
@@ -173,7 +223,7 @@ export default function CTASection() {
                           <FormItem className="sm:col-span-2">
                             <FormLabel>Company name</FormLabel>
                             <FormControl>
-                              <Input placeholder="Your Company Ltd." {...field} />
+                              <Input id="company" placeholder="Your Company Ltd." {...field} />
                             </FormControl>
                           </FormItem>
                         )}

@@ -3,6 +3,10 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-LFJF8HJDJ7"
+ReactGA.initialize(TRACKING_ID)
 
 function Router() {
   return (

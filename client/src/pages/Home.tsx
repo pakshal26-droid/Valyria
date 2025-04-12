@@ -5,11 +5,18 @@ import NewWaySection from "@/components/NewWaySection";
 import SolutionSection from "@/components/SolutionSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
+import { useEffect  } from "react";
+import ReactGA from 'react-ga'
+
 
 export default function Home() {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname)
+  },[])
+
   // Smooth scroll function for navigation links
   useEffect(() => {
+    
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchorElement = target.closest('a[href^="#"]');
