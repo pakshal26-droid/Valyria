@@ -50,7 +50,7 @@ export default function CTASection() {
     
     if (formRef.current) {
       // Create hidden inputs for the template variables
-      const form = formRef.current;
+      const formElement = formRef.current;
       
       // Format data for the email template
       const formattedName = `${data.firstName} ${data.lastName}`;
@@ -63,7 +63,7 @@ export default function CTASection() {
       `;
       
       // Clear any existing hidden fields
-      form.querySelectorAll('input[type="hidden"]').forEach(el => el.remove());
+      formElement.querySelectorAll('input[type="hidden"]').forEach(el => el.remove());
       
       // Create hidden fields with template variable names
       const createHiddenField = (name: string, value: string) => {
@@ -71,7 +71,7 @@ export default function CTASection() {
         input.type = 'hidden';
         input.name = name;
         input.value = value;
-        form.appendChild(input);
+        formElement.appendChild(input);
       };
       
       // Add fields that match the template variables
@@ -82,18 +82,20 @@ export default function CTASection() {
       emailjs.sendForm(
         "service_fffqa7v",
         "template_lsvn23n",
-        form,
+        formElement,
         "1WpGwKo3dYlV2HOiX"
       ).then((result) => {
         console.log(result.text);
         
-        // Notify success and reset form
+        // Notify success
         toast({
           title: "Audit Request Submitted",
           description: "We'll be in touch with you shortly to schedule your free lead audit.",
         });
         
+        // Reset form with default values to avoid validation errors
         form.reset();
+        
         setIsSubmitting(false);
       }, (error) => {
         console.log(error);
