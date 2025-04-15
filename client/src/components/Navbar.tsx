@@ -23,7 +23,7 @@ export default function Navbar() {
               >
                 
               </motion.div>
-              <span className="text-xl font-bold text-slate-800">Valyria</span>
+              <span className="text-xl font-bold text-slate-800">Xelabs</span>
             </a>
           </div>
           
